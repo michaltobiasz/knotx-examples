@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Knot.x</title>
+</head>
+<body>
+<div>
+
+</div>
+<knotx-snippet data-knotx-knots="databridge,te,simpleknot"
+        data-knotx-databridge-name="simple-service-1"
+        data-knotx-databridge-name-second="simple-service-2">
+        <div>
+            <p>{{_result.key1}} : {{simpleHelper _result.value1}}</p>
+            <p>{{second._result.key2}} : {{second._result.value2}}</p>
+        </div>
+</knotx-snippet>
+</div>
+</body>
+</html>

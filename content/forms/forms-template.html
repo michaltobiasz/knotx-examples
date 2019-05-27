@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Knot.x</title>
+</head>
+<body>
+<knotx-snippet data-knotx-knots="form-1,te">
+  {{#if form._result.validationErrors}}
+  <p class="bg-danger">Email address does not exists</p>
+  {{/if}}
+  <p>Please provide your email address</p>
+  <form data-knotx-forms-adapter-name="formsAdapter" data-knotx-forms-on-success="/forms/success.html" data-knotx-forms-on-error="_self" data-knotx-forms-adapter-name-params='{"myKey":"myValue"}' method="post">
+    <input type="email" name="email" value="" />
+    <input type="submit" value="Submit"/>
+  </form>
+  <div>
+    <strong>Pro tip: All emails that starts with <kbd>john.doe</kbd> will be accepted.</strong>
+  </div>
+</knotx-snippet>
+</body>
+</html>
